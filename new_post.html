@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikadu - Новый пост</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper_header">
+            <a href="/" class="logo_header"><img src="img/logo.svg" alt="Pikadu"></a>
+            <nav class="nav_header">
+                <ul class="menu_header">
+                    <li class="menu_header_item"><a href="#" class="menu_header_link">Свежее</a></li>
+                    <li class="menu_header_item"><a href="#" class="menu_header_link">Лучшее</a></li>
+                    <li class="menu_header_item"><a href="#" class="menu_header_link">Горячее</a></li>
+                    <li class="menu_header_item"><a href="#" class="menu_header_link">Подписки</a></li>
+                </ul>
+            </nav>
+            <div class="input_group search">
+                <input type="search" class="search_input" placeholder="Поиск по сайту">
+                <button class="search_btn">
+                    <img src="/img/search.svg" alt="Поиск" class="search_icon">
+                </button>
+            </div>
+            <a href="#" class="menu_toggle" id="menu_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </header>
+
+    <div class="content">
+        <main class="posts">
+            <form action="#" class="add_post">
+                <input type="text" name="post_title" class="add_title" placeholder="Заголовок поста">
+                <textarea name="post_text" id="text" class="add_text" placeholder="Текст вашего поста"></textarea>
+                <div class="add_btns">
+                    <button type="submit" class="btn add_btn"> 
+                        <svg class="icon icon_fire">
+                            <use xlink:href="img/icons.svg#fire"></use>
+                        </svg>
+                        Опубликовать пост
+                    </button>
+                    <button class="btn btn_outline">
+                        <svg class="icon icon_video">
+                            <use xlink:href="img/icons.svg#icons_video"></use>
+                          </svg>
+                          Видео
+                    </button>
+                    <button class="btn btn_outline">
+                        <svg class="icon icon_photo">
+                            <use xlink:href="img/icons.svg#icons_img"></use>
+                          </svg>
+                          Фото
+                    </button>
+                </div>
+            </form>
+        </main>
+
+        <aside class="sidebar">
+            <div class="user">
+                <a href="#" class="user_info">
+                    <img src="img/user.jpg" alt="photo_user" class="user_avatar">
+                    <span class="user_name">JhonDoe</span>
+                </a>
+                <a href="#" class="exit">
+                    <svg class="icon icon_exit">
+                        <use xlink:href="img/icons.svg#exit"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <nav class="sidebar_nav">
+                <ul class="sidebar_menu">
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_menu_link">Ответы</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_menu_link">Комментарии</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_menu_link">Оценки</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_menu_link">Сохраненное</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_menu_link">Подписки</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_menu_link active">Заметки</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_menu_link">Игнор-лист</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="https://www.coca-cola.ru/" class="promo" target="_blank"></a>
+        </aside>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
